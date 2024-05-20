@@ -4,22 +4,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 a {
   text-decoration: none;
   color: whitesmoke;
 }
-
 ul {
   list-style: none;
 }
-
 .active {
   color: #fc036b;
   text-decoration: underline;
   font-weight: bold;
 }
-
 body,
 html {
   overflow-x: hidden;
@@ -27,7 +23,6 @@ html {
   position: relative;
   z-index: 0;
 }
-
 .navbar {
   position: absolute;
   top: 0;
@@ -37,7 +32,6 @@ html {
   width: 100%;
   padding: 20px;
 }
-
 .navbar ul li::after {
   content: "";
   width: 0%;
@@ -47,20 +41,16 @@ html {
   margin: auto;
   transition: 0.5s;
 }
-
 .navbar ul li:hover::after {
   width: 100%;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
 }
-
 .nav-links li {
   margin: 0 30px;
 }
-
 header {
   width: 100vw;
   height: 65vh;
@@ -71,17 +61,14 @@ header {
   align-items: flex-end;
   justify-content: center;
 }
-
 .header-content {
   margin-bottom: 150px;
   color: white;
   text-align: center;
 }
-
 .header-content h2 {
   font-size: 4vmin;
 }
-
 .line {
   width: 250px;
   height: 4px;
@@ -89,20 +76,17 @@ header {
   margin: 10px auto;
   border-radius: 5px;
 }
-
 .header-content h1 {
   font-size: 7vmin;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
 .ctn {
   padding: 8px 15px;
   background: #fc036b;
   border-radius: 30px;
   color: whitesmoke;
 }
-
 .menu-btn,
 .close-btn {
   position: absolute;
@@ -112,50 +96,41 @@ header {
   cursor: pointer;
   display: none;
 }
-
 .logo img {
   width: 150px;
   height: auto;
   transition: transform 0.3s ease;
 }
-
 .logo img:hover {
   transform: scale(1.1);
 }
-
 section {
   width: 80%;
   margin: 80px auto;
 }
-
 .title {
   text-align: center;
   font-size: 4vmin;
   color: #49497e;
 }
-
 .row {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
-
 .row .col {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .events .row {
   margin-top: 50px;
 }
-
 p {
   color: #7c7c7c;
   padding: 0px 40px;
 }
-
 .events .ctn {
   margin-top: 30px;
 }
@@ -191,19 +166,15 @@ p {
   text-align: center;
   padding: 4%;
 }
-
 .explore-content h1 {
   font-size: 7vmin;
 }
-
 .explore-content .line {
   margin-bottom: 10px;
 }
-
 .explore-content p {
   color: rgb(221, 221, 221);
 }
-
 .explore-content .ctn {
   position: relative;
   top: 35px;
@@ -212,37 +183,30 @@ p {
 .content-col {
   width: 40%;
 }
-
 .image-col {
   width: 60%;
 }
-
 .tours .image-gallery {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
 }
-
 .image-gallery img {
   max-width: 300px;
   margin: 10px;
 }
-
 .content-col h1 {
   font-size: 7vmin;
   color: #484872;
 }
-
 .content-col .line {
   margin-left: -1px;
 }
-
 .content-col p {
   padding: 0;
   margin: 30px auto;
 }
-
 .content-col .ctn {
   margin-left: -100px;
 }
@@ -255,7 +219,6 @@ p {
   background: #484872;
   text-align: center;
 }
-
 .footer p {
   color: whitesmoke;
   margin: 20px auto;
@@ -266,11 +229,9 @@ p {
   .menu-btn {
     display: block;
   }
-
   .navbar {
     padding: 0;
   }
-
   .logo {
     position: absolute;
     width: 15px;
@@ -287,47 +248,37 @@ p {
     margin-top: -900px;
     transition: all 0.5s ease;
   }
-
   .mobile-menu {
     margin-top: 0px;
     border-bottom-right-radius: 30%;
   }
-
   .nav-links li {
     margin: 30px auto;
   }
-
   /* Events */
   .row {
     flex-direction: column;
   }
-
   .row .col {
     margin: 20px auto;
   }
-
   .col img {
     max-width: 90%;
   }
-
   /* explore */
   .explore-content {
     width: 100%;
   }
-
   .tours .col {
     width: 100%;
   }
-
   .image-gallery {
     justify-content: center;
     align-items: center;
   }
-
   .image-gallery img {
     width: 90%;
   }
-
   .footer {
     padding: 10px;
   }
@@ -337,17 +288,14 @@ p {
 img {
   transition: transform 0.3s;
 }
-
 img:hover {
   transform: scale(1.1);
 }
-
 .ctn:hover {
   background: whitesmoke;
   color: #fc036b;
   box-shadow: 2px 2px 5px #00000056;
 }
-
 li:hover {
   color: #fc036b;
   cursor: pointer;
@@ -360,7 +308,6 @@ li:hover {
   margin: auto;
   padding: 80px 0;
 }
-
 .location iframe {
   width: 100%;
 }
@@ -369,7 +316,6 @@ li:hover {
   width: 80%;
   margin: auto;
 }
-
 .contact-col {
   flex-basis: 48%;
   margin-bottom: 30px;
@@ -390,16 +336,13 @@ li:hover {
 
 .contact-col div p {
   padding: 0;
-  margin-top: 10px; /* Add margin-top for space */
 }
-
 .contact-col div h5 {
   font-size: 20px;
-  margin-bottom: 10px; /* Add margin-bottom for space */
+  margin-bottom: 5px;
   color: #555;
   font-weight: 400;
 }
-
 .contact-col input,
 .contact-col textarea {
   width: 100%;
