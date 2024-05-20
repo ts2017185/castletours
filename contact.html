@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Castle Tours</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./contactstyle.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-nav">
+                <img src="./img/menu-btn.png" alt="Menu Button"
+                    class="menu-btn">
+                <button class="close-btn">X</button>
+            </div>
+        </nav>
+        <header>
+
+        </header>
+
+        <section class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.048132801281!2d-6.262489624515187!3d53.34239457502071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9b8489c309%3A0x175b473d89f01e6e!2s88%20Grafton%20Street%2C%20Dublin%202%2C%20D02%20VF65%2C%20Ireland!5e0!3m2!1sen!2snl!4v1715592258540!5m2!1sen!2snl"
+                width="600" height="450" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>88 Grafton Street, Dublin</h5>
+                            <p>D02 VF65, Ireland</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+353 1 605 6666</h5>
+                            <p>Monday to Sunday 10 Am to 8 Pm</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>contact@castletours.com</h5>
+                            <p>Email us your query!</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form method="post" action="contact-form-handler.php">
+                        <input type="text" name="name" id="name"
+                            placeholder="Enter your name" required>
+                        <input type="email" name="email" id="email"
+                            placeholder="Enter email address" required>
+                        <input type="text" name="subject" id="subject"
+                            placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" id="message"
+                            placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn"
+                            id="sendBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>88 Grafton Street, Dublin, D02 VF65, Ireland | Phone:
+                +353 1 605 6666 |
+                Email: contact@castletours.com</p>
+            <p>Copyright © 2024 Castle Tours | Made by Thiago Silva</p>
+
+        </footer>
+
+        <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+        document.getElementById('sendBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var subject = document.getElementById('subject');
+    var message = document.getElementById('message');
+
+    if(name.value === "" || email.value === "" || subject.value === "" || message.value === "") {
+        alert('Please fill all the fields!');
+    } else {
+        alert('Your message has been sent successfully!');
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+    }
+});
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+    </body>
+</html>

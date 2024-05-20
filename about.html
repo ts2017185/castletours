@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Castle Tours</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./aboutstyle.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-nav">
+                <img src="./img/menu-btn.png" alt="Menu Button"
+                    class="menu-btn">
+                <button class="close-btn">X</button>
+            </div>
+        </nav>
+        <header>
+
+        </header>
+
+        <section class="about-us">
+            <div class="row">
+                <div class="abouttext-col">
+                    <h1>We are the world's leading castle tour company</h1><br>
+                    <p>Immerse yourself in the rich tapestry of history and
+                        legend with us.<br> Our tours are meticulously designed
+                        to
+                        offer an unparalleled experience, taking you through the
+                        grand halls and ancient corridors of the world's most
+                        iconic castles. Our knowledgeable guides are passionate
+                        about sharing the fascinating stories that each castle
+                        holds, from epic battles to royal intrigues.<br>
+                        We pride ourselves on our attention to detail, ensuring
+                        that every aspect of your tour is handled with care.
+                        From the moment you step onto our tour, you'll be
+                        transported back in time, experiencing the majesty and
+                        mystery of these historic fortresses.<br>
+                        Our commitment to excellence extends beyond our tours.
+                        We strive to provide exceptional customer service,
+                        ensuring that your castle tour is not just a visit, but
+                        an unforgettable journey. Join us and discover the
+                        captivating allure of castles like never before.</p><br>
+                    <h1>Please have a look at some photos from our special
+                        gallery</h1>
+                </div>
+                <div class="about-col">
+                    <img src="img/about1.png">
+                </div>
+                <div class="about-col">
+                    <img src="img/about2.png">
+                </div>
+                <div class="about-col">
+                    <img src="img/about3.png">
+                </div>
+                <div class="about-col">
+                    <img src="img/about4.png">
+                </div>
+                <div class="about-col">
+                    <img src="img/about5.png">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>88 Grafton Street, Dublin, D02 VF65, Ireland | Phone:
+                +353 1 605 6666 |
+                Email: contact@castletours.com</p>
+            <p>Copyright © 2024 Castle Tours | Made by Thiago Silva</p>
+        </footer>
+
+        <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+    </body>
+</html>
