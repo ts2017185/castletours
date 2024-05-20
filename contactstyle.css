@@ -308,6 +308,7 @@ li:hover {
   margin: auto;
   padding: 80px 0;
 }
+
 .location iframe {
   width: 100%;
 }
@@ -316,6 +317,7 @@ li:hover {
   width: 80%;
   margin: auto;
 }
+
 .contact-col {
   flex-basis: 48%;
   margin-bottom: 30px;
@@ -336,13 +338,16 @@ li:hover {
 
 .contact-col div p {
   padding: 0;
+  margin-top: 5px;
 }
+
 .contact-col div h5 {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #555;
   font-weight: 400;
 }
+
 .contact-col input,
 .contact-col textarea {
   width: 100%;
