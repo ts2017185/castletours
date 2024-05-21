@@ -180,7 +180,7 @@ __JavaScript Functionality__
 
 ```
 
-![JavaScript Functionality](assets/eadme/WindowContactFormRequest.PNG)
+![JavaScript Functionality](assets/readme/WindowContactFormRequest.PNG)
 
 ![JavaScript Functionality](assets/readme/WindowContactFormFilled.PNG)
 
