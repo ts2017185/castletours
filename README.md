@@ -177,6 +177,7 @@ __JavaScript Functionality__
                     message.value = "";
                 }
             });
+
 ```
 
 ![JavaScript Functionality](assets/eadme/WindowContactFormRequest.PNG)
