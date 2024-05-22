@@ -272,7 +272,7 @@ __Devices Tested:__
 
 __Bugs and Issues__
 
-- Issue: After some tests, was noticed that on the email field on contact form was accepting invalid emails without "@" or ending with ".com".
+- Issue: After conducting tests, it was observed that the email field in the contact form was accepting invalid email addresses. These invalid emails either lacked the "@" symbol or did not end with ".com".
 - Status: I've successfully resolved the issue. After studying various tutorials and YouTube videos, I implemented a form validation system. This system performs several checks on the email input:
   It ensures no fields are left blank.
   It verifies that the email contains an "@" symbol.
