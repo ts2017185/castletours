@@ -305,7 +305,7 @@ document.getElementById('sendBtn').addEventListener('click', function(e) {
 - Issue: Occasionally, the Google Maps iframe does not load on slow internet connections.
 - Status: Not yet addressed. A potential solution could be to provide a fallback static image of the location.
 
-###Code Validation
+## Code Validation
 
 All the code has been run through the [W3C html Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fts2017185.github.io%2Fcastletours%2Findex.html) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fts2017185.github.io%2Fcastletours%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en). Minor errors were found on the Home and Tours pages. After a fix and retest, no errors were returned for both.
 
@@ -420,9 +420,11 @@ The font came from [Google Fonts](https://fonts.google.com/).
 
 The map is embedded from [Google Maps](https://www.google.com/maps/@52.469397,5.509644,8z?entry=ttu).
 
-The form validation and pop up window idea came from my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
+Big thanks to my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), who helped and gave me the right direction. Also, the form validation and pop-up window idea.
 
 The inspiration for the Project pages came from [Visit Holland](https://www.holland.com/global/tourism).
+
+I used videos and turorials on YouTube as a base and resources, some of them are [FreeCodeCamp.org](https://www.youtube.com/watch?v=Zi-Q0t4gMC8), [GreatStack](https://www.youtube.com/@GreatStackDev), and [SuperSimpleDev](https://www.youtube.com/@SuperSimpleDev)
 
 __Media__
 
