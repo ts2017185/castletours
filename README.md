@@ -274,9 +274,9 @@ __Bugs and Issues__
 
 - Issue: After some tests, was noticed that on the email field on contact form was accepting invalid emails without "@" or ending with ".com".
 - Status: I've successfully resolved the issue. After studying various tutorials and YouTube videos, I implemented a form validation system. This system performs several checks on the email input:
- - It ensures no fields are left blank.
- - It verifies that the email contains an "@" symbol.
- - It checks that the email ends with ".com".
+  It ensures no fields are left blank.
+  It verifies that the email contains an "@" symbol.
+  It checks that the email ends with ".com".
 To ensure the email format is correct, I used the split() method to count the occurrences of "@" and ".com". The code now checks that the email contains exactly one "@" and ends with exactly one ".com". If these conditions aren't met, the user is alerted to enter a valid email address.
 ```
 document.getElementById('sendBtn').addEventListener('click', function(e) {
