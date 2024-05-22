@@ -161,22 +161,24 @@ __JavaScript Functionality__
 
 ```
  document.getElementById('sendBtn').addEventListener('click', function(e) {
-                e.preventDefault();
-                var name = document.getElementById('name');
-                var email = document.getElementById('email');
-                var subject = document.getElementById('subject');
-                var message = document.getElementById('message');
-
-                if (name.value === "" || email.value === "" || subject.value === "" || message.value === "") {
-                    alert('Please fill all the fields!');
-                } else {
-                    alert('Your message has been sent successfully!');
-                    name.value = "";
-                    email.value = "";
-                    subject.value = "";
-                    message.value = "";
-                }
-            });
+    e.preventDefault();
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var subject = document.getElementById('subject');
+    var message = document.getElementById('message');
+    // Form validation to check for blank spaces, and if the email contains exactly one "@" and ends with one ".com"
+    if (name.value === "" || email.value === "" || subject.value === "" || message.value === "") {
+        alert('Please fill all the fields!');
+    } else if (email.value.split('@').length-1 !== 1 || email.value.split('.com').length-1 !== 1 || !email.value.endsWith('.com')) {
+        alert('Please enter a valid email address!');
+    } else {
+        alert('Your message has been sent successfully!');
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+    }
+});
 ```
 
 ![JavaScript Functionality](readme/WindowContactFormRequest.PNG)
@@ -270,6 +272,33 @@ __Devices Tested:__
 
 __Bugs and Issues__
 
+- Issue: After some tests, was noticed that on the email field on contact form was accepting invalid emails without "@" or ending with ".com".
+- Status: I've successfully resolved the issue. After studying various tutorials and YouTube videos, I implemented a form validation system. This system performs several checks on the email input:
+ - It ensures no fields are left blank.
+ - It verifies that the email contains an "@" symbol.
+ - It checks that the email ends with ".com".
+To ensure the email format is correct, I used the split() method to count the occurrences of "@" and ".com". The code now checks that the email contains exactly one "@" and ends with exactly one ".com". If these conditions aren't met, the user is alerted to enter a valid email address.
+```
+document.getElementById('sendBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var subject = document.getElementById('subject');
+    var message = document.getElementById('message');
+    // Form validation to check for blank spaces, and if the email contains exactly one "@" and ends with one ".com"
+    if (name.value === "" || email.value === "" || subject.value === "" || message.value === "") {
+        alert('Please fill all the fields!');
+    } else if (email.value.split('@').length-1 !== 1 || email.value.split('.com').length-1 !== 1 || !email.value.endsWith('.com')) {
+        alert('Please enter a valid email address!');
+    } else {
+        alert('Your message has been sent successfully!');
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+    }
+});
+```
 - Issue: Sometimes, the videos does not load on slow internet connections, or when the updates are quite big.
 - Status: Not yet addressed. Considering reduce the quality or the size of the videos.
 
